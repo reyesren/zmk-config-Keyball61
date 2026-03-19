@@ -14,13 +14,13 @@
 
 &lt {
     tapping-term-ms = <200>;
-    flavor = "balanced";
+    flavor = "tap-unless-interrupted";
     quick-tap-ms = <150>;
 };
 
 &mt {
-    tapping-term-ms = <200>;
-    flavor = "tap-preferred";
+    tapping-term-ms = <180>;
+    flavor = "tap-unless-interrupted";
     quick-tap-ms = <150>;
 };
 
@@ -35,9 +35,9 @@
             bindings = <
 &mo 2           &kp N1              &kp N2          &kp N3            &kp N4              &kp N5                                                   &kp N6       &kp N7               &kp N8             &kp N9           &kp N0                       &kp MINUS
 &kp TAB         &kp Q               &kp W           &kp E             &kp R               &kp T                                                    &kp Y        &kp U                &kp I              &kp O            &kp P                        &kp EQUAL
-&kp ESCAPE      &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F  &kp G                                                    &kp H        &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp ESCAPE      &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F  &lt 4 G                                                  &kp H        &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z               &kp X           &kp C             &kp V               &kp B            &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &kp N        &kp M                &kp COMMA          &kp DOT          &kp FSLH                     &kp HOME
-&tog 1          &kp BACKSLASH       &mo 4           &kp GRAVE         &lt 3 UNDERSCORE    &lt 7 BACKSPACE  &lt 8 LG(LC(SLASH))  &lt 8 ENTER        &lt 7 SPACE                                                           &mo 6                        &kp END
+&tog 1          &kp BACKSLASH       &kp GRAVE       &mo 4             &lt 7 UNDERSCORE    &lt 3 BACKSPACE  &lt 8 LG(LC(SLASH))  &lt 8 ENTER        &lt 7 SPACE                                                           &mo 6                        &kp END
             >;
         };
 
@@ -46,9 +46,9 @@
             bindings = <
 &mo 2           &kp N1          &kp N2          &kp N3            &kp N4            &kp N5                                                   &kp N6       &kp N7       &kp N8             &kp N9           &kp N0                  &kp MINUS
 &kp TAB         &kp Q           &kp W           &kp E             &kp R             &kp T                                                    &kp Y        &kp U        &kp I              &kp O            &kp P                   &kp EQUAL
-&kp ESCAPE      &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RCTRL F       &kp G                                                    &kp H        &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt LEFT_GUI SEMICOLON  &kp SQT
+&kp ESCAPE      &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RCTRL F       &lt 4 G                                                  &kp H        &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt LEFT_GUI SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z           &kp X           &kp C             &kp V             &kp B            &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &kp N        &kp M        &kp COMMA          &kp DOT          &kp FSLH                &kp HOME
-&tog 0          &kp BACKSLASH   &mo 4           &kp GRAVE         &lt 3 UNDERSCORE  &lt 7 BACKSPACE  &lt 8 LG(LC(SLASH))  &lt 8 ENTER        &lt 7 SPACE                                                   &mo 6                   &kp END
+&tog 0          &kp BACKSLASH   &kp GRAVE       &mo 4             &lt 7 UNDERSCORE  &lt 3 BACKSPACE  &lt 8 LG(LC(SLASH))  &lt 8 ENTER        &lt 7 SPACE                                                   &mo 6                   &kp END
             >;
         };
 
@@ -68,7 +68,7 @@
             bindings = <
 &trans  &trans     &trans     &trans  &trans     &trans                  &trans    &trans    &trans        &trans     &trans  &trans
 &trans  &trans     &trans     &trans  &trans     &trans                  &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &mkp MCLK  &mkp RCLK  &trans  &mkp LCLK  &trans                  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &mkp MCLK  &mkp RCLK  &trans  &mkp LCLK  &mo 4                   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans     &trans     &trans  &trans     &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans
 &trans  &trans     &trans     &trans  &trans     &mo 5   &trans  &trans  &mo 6                                        &trans  &trans
             >;
