@@ -55,11 +55,11 @@
         logistics_layer {
             label = "LOG";
             bindings = <
-&trans  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                  &trans  &kt C_REWIND  &kt C_PLAY_PAUSE  &kt C_FAST_FORWARD  &trans  &trans
-&trans  &bootloader  &trans        &trans        &trans        &trans                  &trans  &trans        &trans            &trans              &trans  &trans
-&trans  &trans       &trans        &trans        &trans        &trans                  &trans  &trans        &trans            &trans              &trans  &trans
-&trans  &trans       &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans        &trans            &trans              &trans  &trans
-&trans  &trans       &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                      &trans  &trans
+&trans  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                  &trans  &kt C_PREVIOUS  &kt C_PLAY_PAUSE  &kt C_NEXT  &trans  &trans
+&trans  &bootloader  &trans        &trans        &trans        &trans                  &trans  &trans          &trans            &trans      &trans  &trans
+&trans  &trans       &trans        &trans        &trans        &trans                  &trans  &trans          &trans            &trans      &trans  &trans
+&trans  &trans       &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans          &trans            &trans      &trans  &trans
+&trans  &trans       &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                &trans  &trans
             >;
         };
 
