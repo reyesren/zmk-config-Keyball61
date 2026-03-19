@@ -132,9 +132,9 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: REWIND, h: toggle}
+  - {t: PREVIOUS, h: toggle}
   - {t: PLAY PAUSE, h: toggle}
-  - {t: FAST FORWARD, h: toggle}
+  - {t: '$$mdi:skip-next$$', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
