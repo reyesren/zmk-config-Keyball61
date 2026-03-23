@@ -58,8 +58,8 @@ layers:
   - {t: _, h: SYM}
   - {t: '$$mdi:backspace$$', h: MOUSE}
   - {t: Ctl+Gui+/, h: NUM, s: 'Ctl+Gui+?'}
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
   - FUN
   - END
   QWRT_LINUX:
@@ -120,8 +120,8 @@ layers:
   - {t: _, h: SYM}
   - {t: '$$mdi:backspace$$', h: MOUSE}
   - {t: Ctl+Gui+/, h: NUM, s: 'Ctl+Gui+?'}
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - RETURN
+  - $$mdi:keyboard-space$$
   - FUN
   - END
   LOG:
@@ -490,10 +490,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - PASTE
-  - CUT
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUM:
@@ -554,7 +554,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
