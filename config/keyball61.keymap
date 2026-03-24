@@ -160,3 +160,79 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 };
+
+// =============================
+// Per‑key mod‑tap tuning macos
+// =============================
+
+// LEFT HAND HOME ROW
+&mt LEFT_COMMAND F {
+    tapping-term-ms = <140>;
+};
+
+&mt LEFT_SHIFT D {
+    tapping-term-ms = <150>;
+};
+
+&mt LEFT_ALT S {
+    tapping-term-ms = <180>;
+};
+
+&mt LEFT_CONTROL A {
+    tapping-term-ms = <180>;
+};
+
+// RIGHT HAND HOME ROW
+&mt RIGHT_COMMAND J {
+    tapping-term-ms = <140>;
+};
+
+&mt RIGHT_SHIFT K {
+    tapping-term-ms = <150>;
+};
+
+&mt RIGHT_ALT L {
+    tapping-term-ms = <180>;
+};
+
+&mt RIGHT_CONTROL SEMICOLON {
+    tapping-term-ms = <180>;
+};
+
+// =============================
+// Per‑key mod‑tap tuning linux 
+// =============================
+
+// LEFT HAND HOME ROW
+&mt RCTRL F {
+    tapping-term-ms = <140>;
+};
+
+&mt LEFT_SHIFT D {
+    tapping-term-ms = <150>;
+};
+
+&mt LEFT_ALT S {
+    tapping-term-ms = <180>;
+};
+
+&mt LEFT_GUI A {
+    tapping-term-ms = <180>;
+};
+
+// RIGHT HAND HOME ROW
+&mt RCTRL J {
+    tapping-term-ms = <140>;
+};
+
+&mt RIGHT_SHIFT K {
+    tapping-term-ms = <150>;
+};
+
+&mt RIGHT_ALT L {
+    tapping-term-ms = <180>;
+};
+
+&mt LEFT_GUI SEMICOLON {
+    tapping-term-ms = <180>;
+};
