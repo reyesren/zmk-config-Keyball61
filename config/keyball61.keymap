@@ -161,7 +161,6 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 };
 
-/*
 // =============================
 // Per‑key mod‑tap tuning (macOS)
 // =============================
@@ -169,7 +168,7 @@
 // These overrides match the HRMs defined in the QWRT_MACOS layer.
 // They must appear AFTER the macOS layer in the file.
 
-// LEFT HAND HOME ROW (macOS)
+// LEFT HAND HOME ROW
 &mt LEFT_COMMAND F {
     tapping-term-ms = <140>;
 };
@@ -186,7 +185,7 @@
     tapping-term-ms = <180>;
 };
 
-// RIGHT HAND HOME ROW (macOS)
+// RIGHT HAND HOME ROW
 &mt RIGHT_COMMAND J {
     tapping-term-ms = <140>;
 };
@@ -211,7 +210,7 @@
 // These overrides match the HRMs defined in the QWRT_LINUX layer.
 // They must appear AFTER the Linux layer in the file.
 
-// LEFT HAND HOME ROW (Linux)
+// LEFT HAND HOME ROW
 &mt RCTRL F {
     tapping-term-ms = <140>;
 };
@@ -228,7 +227,7 @@
     tapping-term-ms = <180>;
 };
 
-// RIGHT HAND HOME ROW (Linux)
+// RIGHT HAND HOME ROW
 &mt RCTRL J {
     tapping-term-ms = <140>;
 };
@@ -244,4 +243,3 @@
 &mt LEFT_GUI SEMICOLON {
     tapping-term-ms = <180>;
 };
-*/
