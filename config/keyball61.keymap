@@ -161,6 +161,7 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 };
 
+/*
 // =============================
 // Per‑key mod‑tap tuning (macOS)
 // =============================
@@ -243,3 +244,4 @@
 &mt LEFT_GUI SEMICOLON {
     tapping-term-ms = <180>;
 };
+*/
