@@ -30,36 +30,25 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_macos {
-            label = "QWRT_MACOS";
+        DEFAULT_LAYER {
+            label = "QWRT";
             bindings = <
-&mo 2           &kp N1              &kp N2          &kp N3             &kp N4              &kp N5                                                &kp N6     &kp C_PREV           &kp C_PLAY_PAUSE   &kp C_NEXT       &kp N0                       &kp MINUS
-&kp TAB         &kp Q               &kp W           &kp E              &kp R               &kp T                                                 &kp Y      &kp U                &kp I              &kp O            &kp P                        &kp EQUAL
-&kp ESCAPE      &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D   &mt LEFT_COMMAND F  &lt 4 G                                               &kp H      &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
+&to 1           &kp N1              &kp N2          &kp N3             &kp N4              &kp N5                                                &kp N6     &kp NUMBER_7         &kp NUMBER_8       &kp NUMBER_9     &kp N0                       &kp MINUS
+&kp TAB         &mt LG(TAB) Q       &kp W           &kp E              &kp R               &kp T                                                 &kp Y      &kp U                &kp I              &kp O            &kp P                        &kp EQUAL
+&kp ESCAPE      &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D   &mt LEFT_COMMAND F  &lt 3 G                                               &kp H      &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z               &kp X           &kp C              &kp V               &kp B            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N      &kp M                &kp COMMA          &kp DOT          &kp FSLH                     &kp HOME
-&to 1           &kp BACKSLASH       &kp GRAVE       &kt LC(LG(SLASH))  &lt 9 UNDERSCORE    &lt 3 BACKSPACE  &mo 8             &lt 7 ENTER        &kp SPACE                                                           &mo 6                        &kp END
-            >;
-        };
-
-        DEFAULT_LINUX {
-            label = "QWRT_LINUX";
-            bindings = <
-&mo 2           &kp N1          &kp N2          &kp N3             &kp N4             &kp N5                                                &kp N6     &kp N7       &kp N8             &kp N9           &kp N0                  &kp MINUS
-&kp TAB         &kp Q           &kp W           &kp E              &kp R              &kp T                                                 &kp Y      &kp U        &kp I              &kp O            &kp P                   &kp EQUAL
-&kp ESCAPE      &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D   &mt RCTRL F        &lt 4 G                                               &kp H      &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt LEFT_GUI SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z           &kp X           &kp C              &kp V              &kp B            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N      &kp M        &kp COMMA          &kp DOT          &kp FSLH                &kp HOME
-&to 0           &kp BACKSLASH   &kp GRAVE       &kp LC(LG(SLASH))  &lt 10 UNDERSCORE  &lt 3 BACKSPACE  &mo 8             &lt 7 ENTER        &kp SPACE                                                   &mo 6                   &kp END
+&trans          &kp BACKSLASH       &kp GRAVE       &kt LC(LG(SLASH))  &mo 5               &lt 2 BACKSPACE  &mo 7             &lt 6 ENTER        &kp SPACE                                                           &mo 5                        &kp END
             >;
         };
 
         logistics_layer {
             label = "LOG";
             bindings = <
-&trans  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bootloader  &trans        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans        &trans        &trans        &trans  &trans  &trans  &trans                          &trans  &trans
+&to 0   &trans      &trans        &trans        &trans        &trans                  &trans  &trans      &trans            &trans      &trans  &trans
+&trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                  &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans
+&trans  &trans      &trans        &trans        &trans        &trans                  &trans  &trans      &trans            &trans      &trans  &trans
+&trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans      &trans            &trans      &trans  &trans
+&trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans                                            &trans  &trans
             >;
         };
 
@@ -68,7 +57,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &mo 5   &trans                  &trans  &mkp LCLK  &mo 4   &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &mo 4   &trans                  &trans  &mkp LCLK  &mo 3   &mkp RCLK  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                &trans  &trans
             >;
@@ -88,11 +77,11 @@
 
         SNIPE_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mo 4                   &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
             >;
 
             label = "SNIPE";
@@ -109,52 +98,28 @@
             >;
         };
 
+        EDIT_LAYER {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans                                    &trans    &trans    &trans  &trans     &trans      &trans
+&trans  &trans  &trans     &trans     &trans     &trans                                    &trans    &trans    &trans  &trans     &kp DELETE  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME    &trans
+&trans  &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans         &trans             &trans  &trans    &trans    &trans  &trans     &kp END     &trans
+&trans  &trans  &trans     &trans     &trans     &kp LA(LCTRL)  &kp LG(LA(LCTRL))  &trans  &trans                                 &trans      &trans
+            >;
+
+            label = "EDIT";
+        };
+
         SYMBOL_LAYER {
             bindings = <
-&trans      &trans    &trans       &trans    &trans      &trans                       &trans     &trans         &trans        &trans                &trans                 &trans
-&trans      &trans    &trans       &trans    &trans      &trans                       &trans     &trans         &trans        &trans                &trans                 &trans
-&caps_word  &kp EXCL  &kt AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans      &trans    &trans       &trans    &trans      &trans       &trans  &trans  &trans     &trans         &trans        &trans                &trans                 &trans
-&trans      &trans    &trans       &trans    &trans      &trans       &trans  &trans  &trans                                                        &trans                 &trans
+&trans        &trans           &trans            &trans                &trans          &trans                            &trans            &trans           &trans                 &trans             &trans             &trans
+&trans        &kp EXCLAMATION  &kp AT_SIGN       &kp STAR              &kp HASH        &kp BACKSLASH                     &kp SLASH         &kp PLUS         &kp AMPERSAND          &kp GRAVE          &kp PIPE           &trans
+&kp CAPSLOCK  &kp SQT          &kp MINUS         &kp UNDER             &kp EQUAL       &kp CARET                         &kp DOLLAR        &kp COLON        &kp SEMI               &kp COMMA          &kp DOUBLE_QUOTES  &trans
+&trans        &kp PERCENT      &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LESS_THAN  &trans  &trans     &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp QUESTION       &trans
+&trans        &trans           &trans            &trans                &trans          &trans         &trans  &kp COMMA  &kp PERIOD                                                                   &trans             &trans
             >;
 
             label = "SYM";
-        };
-
-        NUMBER_LAYER {
-            bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7  &kp N8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans        &trans  &trans  &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans                                      &trans        &trans
-            >;
-
-            label = "NUM";
-        };
-
-        EDIT_MACOS {
-            bindings = <
-&trans  &trans            &trans        &trans          &trans        &trans                  &trans    &trans    &trans   &trans     &trans  &trans
-&trans  &trans            &trans        &trans          &trans        &trans                  &trans    &trans    &trans   &trans     &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_GUI  &trans                  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
-&trans  &trans            &trans        &trans          &trans        &trans  &trans  &trans  &trans    &kp HOME  &kp END  &trans     &trans  &trans
-&trans  &trans            &trans        &trans          &trans        &trans  &trans  &trans  &trans                                  &trans  &trans
-            >;
-
-            label = "EDIT_MACOS";
-        };
-
-        EDIT_LINUX {
-            bindings = <
-&trans  &trans        &trans        &trans          &trans            &trans                  &trans    &trans    &trans   &trans     &trans  &trans
-&trans  &trans        &trans        &trans          &trans            &trans                  &trans    &trans    &trans   &trans     &trans  &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
-&trans  &trans        &trans        &trans          &trans            &trans  &trans  &trans  &trans    &kp HOME  &kp END  &trans     &trans  &trans
-&trans  &trans        &trans        &trans          &trans            &trans  &trans  &trans  &trans                                  &trans  &trans
-            >;
-
-            label = "EDIT_LINUX";
         };
     };
 
@@ -164,82 +129,109 @@
 // =============================
 // Per‑key mod‑tap tuning (macOS)
 // =============================
-
 // These overrides match the HRMs defined in the QWRT_MACOS layer.
 // They must appear AFTER the macOS layer in the file.
-
 // LEFT HAND HOME ROW
-&mt LEFT_COMMAND F {
+
+&mt {
+    LEFT_COMMAND F
+
     tapping-term-ms = <140>;
 };
 
-&mt LEFT_SHIFT D {
+&mt {
+    LEFT_SHIFT D
+
     tapping-term-ms = <150>;
 };
 
-&mt LEFT_ALT S {
+&mt {
+    LEFT_ALT S
+
     tapping-term-ms = <180>;
 };
 
-&mt LEFT_CONTROL A {
+&mt {
+    LEFT_CONTROL A
+
     tapping-term-ms = <180>;
 };
 
 // RIGHT HAND HOME ROW
-&mt RIGHT_COMMAND J {
+
+&mt {
+    RIGHT_COMMAND J
+
     tapping-term-ms = <140>;
 };
 
-&mt RIGHT_SHIFT K {
+&mt {
+    RIGHT_SHIFT K
+
     tapping-term-ms = <150>;
 };
 
-&mt RIGHT_ALT L {
+&mt {
+    RIGHT_ALT L
+
     tapping-term-ms = <180>;
 };
 
-&mt RIGHT_CONTROL SEMICOLON {
-    tapping-term-ms = <180>;
-};
+&mt RIGHT_CONTROL
 
+SEMICOLON { tapping-term-ms = <180>; };
 
 // =============================
 // Per‑key mod‑tap tuning (Linux)
 // =============================
-
 // These overrides match the HRMs defined in the QWRT_LINUX layer.
 // They must appear AFTER the Linux layer in the file.
-
 // LEFT HAND HOME ROW
-&mt RCTRL F {
+
+&mt {
+    RCTRL F
+
     tapping-term-ms = <140>;
 };
 
-&mt LEFT_SHIFT D {
+&mt {
+    LEFT_SHIFT D
+
     tapping-term-ms = <150>;
 };
 
-&mt LEFT_ALT S {
+&mt {
+    LEFT_ALT S
+
     tapping-term-ms = <180>;
 };
 
-&mt LEFT_GUI A {
+&mt {
+    LEFT_GUI A
+
     tapping-term-ms = <180>;
 };
 
 // RIGHT HAND HOME ROW
-&mt RCTRL J {
+
+&mt {
+    RCTRL J
+
     tapping-term-ms = <140>;
 };
 
-&mt RIGHT_SHIFT K {
+&mt {
+    RIGHT_SHIFT K
+
     tapping-term-ms = <150>;
 };
 
-&mt RIGHT_ALT L {
+&mt {
+    RIGHT_ALT L
+
     tapping-term-ms = <180>;
 };
 
-&mt LEFT_GUI SEMICOLON {
-    tapping-term-ms = <180>;
-};
+&mt LEFT_GUI
+
+SEMICOLON { tapping-term-ms = <180>; };
