@@ -36,7 +36,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp LCLK  &mo 4   &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mo 5   &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &to 1   &trans  &trans  &trans  &trans                                &trans  &trans
             >;
         };
