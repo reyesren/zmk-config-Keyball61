@@ -36,8 +36,8 @@
 &to 1           &kp N1              &kp N2          &kp N3             &kp N4              &kp N5                                                &kp N6     &kp NUMBER_7         &kp NUMBER_8       &kp NUMBER_9     &kp N0                       &kp MINUS
 &kp TAB         &mt LG(TAB) Q       &kp W           &kp E              &kp R               &kp T                                                 &kp Y      &kp U                &kp I              &kp O            &kp P                        &kp EQUAL
 &kp ESCAPE      &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D   &mt LEFT_COMMAND F  &lt 3 G                                               &kp H      &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z               &kp X           &kp C              &kp V               &kp B            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N      &kp M                &kp COMMA          &kp DOT          &kp FSLH                     &kp HOME
-&trans          &kp BACKSLASH       &kp GRAVE       &kt LC(LG(SLASH))  &mo 5               &lt 2 BACKSPACE  &mo 7             &lt 6 ENTER        &kp SPACE                                                           &mo 5                        &kp END
+&kp LEFT_SHIFT  &kp Z               &kp X           &kp C              &kp V               &kp B            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N      &kp M                &kp COMMA          &kp DOT          &lt 2 SLASH                  &kp HOME
+&trans          &kp BACKSLASH       &kp GRAVE       &kt LC(LG(SLASH))  &mo 5               &lt 7 BACKSPACE  &mo 7             &lt 6 ENTER        &kp SPACE                                                           &mo 5                        &kp END
             >;
         };
 
@@ -100,11 +100,11 @@
 
         EDIT_LAYER {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans                                    &trans    &trans    &trans  &trans     &trans      &trans
-&trans  &trans  &trans     &trans     &trans     &trans                                    &trans    &trans    &trans  &trans     &kp DELETE  &trans
-&trans  &trans  &trans     &trans     &trans     &trans                                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME    &trans
-&trans  &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans         &trans             &trans  &trans    &trans    &trans  &trans     &kp END     &trans
-&trans  &trans  &trans     &trans     &trans     &kp LA(LCTRL)  &kp LG(LA(LCTRL))  &trans  &trans                                 &trans      &trans
+&trans  &trans        &trans        &trans  &trans              &trans                             &trans    &trans    &trans  &trans     &trans      &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &trans  &trans              &trans                             &trans    &trans    &trans  &trans     &kp DELETE  &trans
+&trans  &trans        &trans        &trans  &trans              &trans                             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME    &trans
+&trans  &trans        &trans        &trans  &trans              &trans             &trans  &trans  &trans    &trans    &trans  &trans     &kp END     &trans
+&trans  &trans        &trans        &trans  &kp LG(LEFT_SHIFT)  &kp LA(LG(LCTRL))  &trans  &trans  &trans                                 &trans      &trans
             >;
 
             label = "EDIT";
@@ -125,4 +125,3 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 };
-
