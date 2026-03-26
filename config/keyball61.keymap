@@ -100,11 +100,11 @@
 
         EDIT_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans              &trans                                                 &trans    &trans    &trans  &trans     &trans      &trans
-&trans  &trans  &trans  &trans  &trans              &trans                                                 &trans    &trans    &trans  &trans     &kp DELETE  &trans
-&trans  &trans  &trans  &trans  &kp LG(GRAVE)       &trans                                                 &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME    &trans
-&trans  &trans  &trans  &trans  &trans              &trans             &trans                      &trans  &trans    &trans    &trans  &trans     &kp END     &trans
-&trans  &trans  &trans  &trans  &kp LG(LEFT_SHIFT)  &kp LA(LG(LCTRL))  &kp LG(LC(LA(LEFT_SHIFT)))  &trans  &trans                                 &trans      &trans
+&trans  &trans  &trans  &trans  &trans              &trans                                       &trans    &trans    &trans  &trans     &trans      &trans
+&trans  &trans  &trans  &trans  &trans              &trans                                       &trans    &trans    &trans  &trans     &kp DELETE  &trans
+&trans  &trans  &trans  &trans  &kp LG(GRAVE)       &trans                                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME    &trans
+&trans  &trans  &trans  &trans  &trans              &trans         &trans                &trans  &trans    &trans    &trans  &trans     &kp END     &trans
+&trans  &trans  &trans  &trans  &kp LG(LEFT_SHIFT)  &kp LA(LCTRL)  &kp LC(LA(LEFT_GUI))  &trans  &trans                                 &trans      &trans
             >;
 
             label = "EDIT";
@@ -112,11 +112,11 @@
 
         DEV_LAYER {
             bindings = <
-&trans        &trans       &trans                &trans                 &trans          &trans                           &trans            &trans             &trans         &trans          &trans             &trans
-&trans        &trans       &trans                &kp SEMI               &kp COLON       &trans                           &trans            &kp GRAVE          &kp AMPERSAND  &kp PIPE        &trans             &trans
-&kp CAPSLOCK  &trans       &kp MINUS             &kp UNDER              &kp EQUAL       &kp CARET                        &kp DOLLAR        &kp LA(LS(J))      &kp LS(LA(K))  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &trans
-&trans        &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SLASH       &kp QUESTION       &trans
-&trans        &trans       &trans                &trans                 &trans          &trans           &trans  &trans  &trans                                                              &trans             &trans
+&trans        &trans       &trans                &trans                 &trans          &trans                           &trans             &trans             &trans         &trans          &trans             &trans
+&trans        &trans       &trans                &kp SEMI               &kp COLON       &trans                           &trans             &kp GRAVE          &kp AMPERSAND  &kp PIPE        &trans             &trans
+&kp CAPSLOCK  &trans       &kp MINUS             &kp UNDER              &kp EQUAL       &kp CARET                        &kp DOLLAR         &kp LA(LS(J))      &kp LS(LA(K))  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &trans
+&trans        &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans  &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SLASH       &kp QUESTION       &trans
+&trans        &trans       &trans                &trans                 &trans          &trans           &trans  &trans  &kp LG(LC(SLASH))                                                    &trans             &trans
             >;
 
             label = "DEV";
