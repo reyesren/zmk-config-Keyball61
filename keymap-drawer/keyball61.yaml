@@ -428,8 +428,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+$$mdi:apple-keyboard-shift$$
-  - Alt+Gui+$$mdi:apple-keyboard-control$$
-  - Gui+Ctl+Alt+$$mdi:apple-keyboard-shift$$
+  - Alt+$$mdi:apple-keyboard-control$$
+  - Ctl+Alt+$$mdi:apple-keyboard-command$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -493,7 +493,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Gui+Ctl+/, s: 'Gui+Ctl+?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUM:
