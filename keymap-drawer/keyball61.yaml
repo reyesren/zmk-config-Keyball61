@@ -55,7 +55,7 @@ layers:
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: Ctl+Gui+/, h: toggle, s: 'Ctl+Gui+?'}
-  - {t: DEV, h: toggle}
+  - DEV
   - {t: '$$mdi:backspace$$', h: MOUSE}
   - NUM
   - {t: '$$mdi:keyboard-return$$', h: EDIT}
@@ -489,7 +489,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
