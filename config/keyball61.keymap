@@ -54,11 +54,11 @@
 
         SYM_NUM_LAYER {
             bindings = <
-&trans        &trans        &trans        &trans        &trans          &trans                                  &trans             &trans             &trans                &trans                 &trans         &trans
-&trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5                                  &kp NUMBER_6       &kp N7             &kp N8                &kp N9                 &kp N0         &trans
-&kp CAPSLOCK  &kp EXCL      &kp AT_SIGN   &kp HASH      &kp DOLLAR      &kp PERCENT                             &kp AMPS           &kp CARET          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &trans
-&trans        &kp PERCENT   &kp UNDER     &kp MINUS     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp STAR              &kp PIPE               &kp BACKSLASH  &trans
-&trans        &trans        &trans        &trans        &trans          &trans           &trans  &kp LG(GRAVE)  &kp LG(LC(SLASH))                                                                  &trans         &trans
+&trans        &trans        &trans        &trans        &trans          &trans                           &trans            &trans             &trans                &trans                 &trans         &trans
+&trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5                           &kp NUMBER_6      &kp N7             &kp N8                &kp N9                 &kp N0         &trans
+&kp CAPSLOCK  &kp EXCL      &kp AT_SIGN   &kp HASH      &kp DOLLAR      &kp PERCENT                      &kp AMPS          &kp CARET          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &trans
+&trans        &kp PERCENT   &kp UNDER     &kp MINUS     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp STAR              &kp PIPE               &kp BACKSLASH  &trans
+&trans        &trans        &trans        &trans        &trans          &trans           &trans  &trans  &trans                                                                            &trans         &trans
             >;
 
             label = "SYM_NUM";
@@ -101,11 +101,11 @@
 
         EDIT_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                            &trans         &trans    &trans  &trans     &trans    &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                            &kp F6         &kp F7    &kp F8  &kp F9     &kp F12   &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans                            &kp LEFT       &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans         &trans    &trans  &trans     &kp END   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LEFT_GUI)  &kp LA(LCTRL)                               &trans    &trans
+&trans  &trans             &trans         &trans              &trans            &trans                  &trans    &trans    &trans  &trans     &trans    &trans
+&trans  &kp F1             &kp F2         &kp F3              &kp F4            &kp F5                  &kp F6    &kp F7    &kp F8  &kp F9     &kp F12   &kp DELETE
+&trans  &trans             &trans         &trans              &trans            &trans                  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
+&trans  &kp LC(LG(SLASH))  &kp LG(GRAVE)  &kp LG(LEFT_SHIFT)  &kp LC(LEFT_ALT)  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &kp END   &trans
+&trans  &trans             &trans         &trans              &trans            &trans  &trans  &trans  &trans                                 &trans    &trans
             >;
 
             label = "EDIT";
