@@ -19,7 +19,7 @@
 };
 
 &mt {
-    tapping-term-ms = <240>;
+    tapping-term-ms = <270>;
     flavor = "tap-unless-interrupted";
     quick-tap-ms = <150>;
 };
