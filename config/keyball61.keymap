@@ -153,11 +153,11 @@
 
         EDIT_LAYER {
             bindings = <
-&trans  &trans             &trans         &trans              &trans            &trans                  &trans    &trans    &trans  &trans     &trans    &trans
-&trans  &kp F1             &kp F2         &kp F3              &kp F4            &kp F5                  &kp F6    &kp F7    &kp F8  &kp F9     &kp F12   &kp DELETE
-&trans  &trans             &trans         &trans              &trans            &trans                  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&trans  &kp LC(LG(SLASH))  &kp LG(GRAVE)  &kp LG(LEFT_SHIFT)  &kp LG(LEFT_ALT)  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &kp END   &trans
-&trans  &trans             &trans         &trans              &trans            &trans  &trans  &trans  &trans                                 &trans    &trans
+&trans  &trans         &trans              &trans                &trans            &trans                  &trans    &trans    &trans  &trans     &trans    &trans
+&trans  &kp F1         &kp F2              &kp F3                &kp F4            &kp F5                  &kp F6    &kp F7    &kp F8  &kp F9     &kp F12   &kp DELETE
+&trans  &trans         &trans              &trans                &trans            &trans                  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
+&trans  &kp LG(GRAVE)  &kp LG(LEFT_SHIFT)  &kp LG(LC(LEFT_ALT))  &kp LC(LEFT_ALT)  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &kp END   &trans
+&trans  &trans         &trans              &trans                &trans            &trans  &trans  &trans  &trans                                 &trans    &trans
             >;
 
             label = "EDIT";
