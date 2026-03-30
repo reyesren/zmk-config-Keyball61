@@ -60,7 +60,7 @@ layers:
   - {t: Ctl+Gui+/, s: 'Ctl+Gui+?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - SYM_NUM
+  - {t: MOUSE, h: toggle}
   - END
   LOG:
   - {t: QWRT, h: toggle}
@@ -184,7 +184,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -413,7 +413,7 @@ layers:
   - {t: Ctl+Gui+/, s: 'Ctl+Gui+?'}
   - {t: Gui+`, s: Gui+~}
   - Gui+$$mdi:apple-keyboard-shift$$
-  - Ctl+$$mdi:apple-keyboard-option$$
+  - Gui+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
