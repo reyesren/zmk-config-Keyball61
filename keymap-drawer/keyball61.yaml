@@ -410,10 +410,10 @@ layers:
   - HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Ctl+Gui+/, s: 'Ctl+Gui+?'}
   - {t: Gui+`, s: Gui+~}
   - Gui+$$mdi:apple-keyboard-shift$$
-  - Gui+$$mdi:apple-keyboard-option$$
+  - Gui+Ctl+$$mdi:apple-keyboard-option$$
+  - Ctl+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
