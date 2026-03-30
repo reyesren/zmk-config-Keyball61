@@ -27,17 +27,45 @@
 &sl { release-after-ms = <2000>; };
 
 / {
+    behaviors {
+        right_mods: right_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <13 14 15 16 17 25 26 28 27 29 37 38 39 40 41 42 53 52 51 50 36 24 12 0 1 2 3 4 5 54 50 51 52 53 54 55 56>;
+        };
+
+        left_mods: left_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 57 58 59 60>;
+            hold-trigger-on-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         DEFAULT_LAYER {
             label = "QWRT";
             bindings = <
-&to 1           &kp N1              &kp N2          &kp N3             &kp N4              &kp N5                                                 &kp N6     &kp NUMBER_7         &kp NUMBER_8       &kp NUMBER_9     &kp N0                       &kp MINUS
-&kp TAB         &kp Q               &kp W           &kp E              &kp R               &kp T                                                  &kp Y      &kp U                &kp I              &kp O            &kp P                        &kp EQUAL
-&kp ESCAPE      &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D   &mt LEFT_COMMAND F  &kp G                                                  &kp H      &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z               &kp X           &kp C              &kp V               &kp B            &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp N      &kp M                &kp COMMA          &kp PERIOD       &kp SLASH                    &kp HOME
-&trans          &kp BACKSLASH       &kp GRAVE       &kt LC(LG(SLASH))  &mo 6               &lt 2 BACKSPACE  &kp LC(LG(SLASH))  &kp ENTER          &kp SPACE                                                           &mo 2                        &kp END
+&to 1           &kp N1                     &kp N2                 &kp N3                   &kp N4                 &kp N5                                                 &kp N6     &kp NUMBER_7                 &kp NUMBER_8               &kp NUMBER_9             &kp N0                               &kp MINUS
+&kp TAB         &kp Q                      &kp W                  &kp E                    &kp R                  &kp T                                                  &kp Y      &kp U                        &kp I                      &kp O                    &kp P                                &kp EQUAL
+&kp ESCAPE      &left_mods LEFT_CONTROL A  &left_mods LEFT_ALT S  &left_mods LEFT_SHIFT D  &left_mods LEFT_GUI F  &kp G                                                  &kp H      &right_mods RIGHT_COMMAND J  &right_mods RIGHT_SHIFT K  &right_mods RIGHT_ALT L  &right_mods RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z                      &kp X                  &kp C                    &kp V                  &kp B            &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp N      &kp M                        &kp COMMA                  &kp PERIOD               &kp SLASH                            &kp HOME
+&trans          &kp BACKSLASH              &kp GRAVE              &kt LC(LG(SLASH))        &mo 6                  &lt 2 BACKSPACE  &kp LC(LG(SLASH))  &kp ENTER          &kp SPACE                                                                                   &tog 3                               &kp END
             >;
         };
 
@@ -104,7 +132,7 @@
 &trans  &trans             &trans         &trans              &trans            &trans                  &trans    &trans    &trans  &trans     &trans    &trans
 &trans  &kp F1             &kp F2         &kp F3              &kp F4            &kp F5                  &kp F6    &kp F7    &kp F8  &kp F9     &kp F12   &kp DELETE
 &trans  &trans             &trans         &trans              &trans            &trans                  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&trans  &kp LC(LG(SLASH))  &kp LG(GRAVE)  &kp LG(LEFT_SHIFT)  &kp LC(LEFT_ALT)  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &kp END   &trans
+&trans  &kp LC(LG(SLASH))  &kp LG(GRAVE)  &kp LG(LEFT_SHIFT)  &kp LG(LEFT_ALT)  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &kp END   &trans
 &trans  &trans             &trans         &trans              &trans            &trans  &trans  &trans  &trans                                 &trans    &trans
             >;
 
