@@ -37,7 +37,6 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <13 14 15 16 17 25 26 28 27 29 37 38 39 40 41 42 53 52 51 50 36 24 12 0 1 2 3 4 5 54 50 51 52 53 54 55 56 58 57>;
             require-prior-idle-ms = <180>;
         };
 
@@ -50,7 +49,6 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 57 58 59 60 54 55 56>;
             require-prior-idle-ms = <180>;
         };
 
@@ -63,7 +61,6 @@
             tapping-term-ms = <160>;
             quick-tap-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 44 45 46 47 48 49 58 59 60 43 57>;
         };
 
         mt_cmd_right: mt_cmd_right {
@@ -75,7 +72,6 @@
             tapping-term-ms = <185>;
             quick-tap-ms = <150>;
             flavor = "hold-preferred";
-            hold-trigger-key-positions = <0 1 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54 55 56>;
         };
 
         right_shift_mod: right_shift_mod {
@@ -87,7 +83,6 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <13 14 15 16 17 25 26 28 27 29 37 38 39 40 41 42 53 52 51 50 36 24 12 0 1 2 3 4 5 54 50 51 52 53 54 55 56 58 57>;
         };
 
         left_shift_mod: left_shift_mod {
@@ -99,7 +94,6 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 57 58 59 60 54 55 56>;
         };
     };
 
@@ -132,8 +126,8 @@
             bindings = <
 &trans        &trans        &trans        &trans        &trans          &trans                           &trans            &trans             &trans                &trans                 &trans         &trans
 &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5                           &kp NUMBER_6      &kp N7             &kp N8                &kp N9                 &kp N0         &trans
-&kp CAPSLOCK  &kp EXCL      &kp AT_SIGN   &kp HASH      &kp DOLLAR      &kp PERCENT                      &kp AMPS          &kp CARET          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &trans
-&trans        &kp PERCENT   &kp UNDER     &kp MINUS     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp STAR              &kp PIPE               &kp BACKSLASH  &trans
+&kp CAPSLOCK  &kp EXCL      &kp AT_SIGN   &kp HASH      &kp CARET       &kp PERCENT                      &kp AMPS          &kp DOLLAR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &trans
+&trans        &kp GRAVE     &kp UNDER     &kp MINUS     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp STAR              &kp PIPE               &kp BACKSLASH  &trans
 &trans        &trans        &trans        &trans        &trans          &trans           &trans  &trans  &trans                                                                            &trans         &trans
             >;
 
@@ -177,11 +171,11 @@
 
         EDIT_LAYER {
             bindings = <
-&trans  &trans         &trans              &trans                &trans            &trans                  &trans    &trans    &trans  &trans     &trans    &trans
-&trans  &kp F1         &kp F2              &kp F3                &kp F4            &kp F5                  &kp F6    &kp F7    &kp F8  &kp F9     &kp F12   &kp DELETE
-&trans  &trans         &trans              &trans                &trans            &trans                  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&trans  &kp LG(GRAVE)  &kp LG(LEFT_SHIFT)  &kp LG(LC(LEFT_ALT))  &kp LC(LEFT_ALT)  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &kp END   &trans
-&trans  &trans         &trans              &trans                &trans            &trans  &trans  &trans  &trans                                 &trans    &trans
+&trans  &trans  &trans         &trans                &trans            &trans                     &trans    &trans    &trans  &trans     &trans    &trans
+&trans  &kp F1  &kp F2         &kp F3                &kp F4            &kp F5                     &kp F6    &kp F7    &kp F8  &kp F9     &kp F12   &kp DELETE
+&trans  &trans  &trans         &trans                &trans            &trans                     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
+&trans  &trans  &kp LG(GRAVE)  &kp LG(LC(LEFT_ALT))  &kp LC(LEFT_ALT)  &trans  &trans  &trans     &trans    &trans    &trans  &trans     &kp END   &trans
+&trans  &trans  &trans         &trans                &trans            &trans  &trans  &kp LG(D)  &trans                                 &trans    &trans
             >;
 
             label = "EDIT";
