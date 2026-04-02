@@ -153,16 +153,16 @@ layers:
   - '!'
   - '@'
   - '#'
-  - $
+  - ^
   - '%'
   - '&'
-  - ^
+  - $
   - (
   - )
   - +
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '%'
+  - {t: '`', s: '~'}
   - _
   - {t: '-', s: _}
   - '{'
@@ -410,8 +410,8 @@ layers:
   - HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+`, s: Gui+~}
-  - Gui+$$mdi:apple-keyboard-shift$$
   - Gui+Ctl+$$mdi:apple-keyboard-option$$
   - Ctl+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -430,7 +430,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
