@@ -102,7 +102,7 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LC(LGUI))>, <&kp LS(LA(LC(LGUI)))>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <175>;
         };
     };
 
