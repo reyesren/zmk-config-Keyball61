@@ -55,9 +55,9 @@ layers:
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: Ctl+Gui+/, h: toggle, s: 'Ctl+Gui+?'}
-  - SYM_NUM
-  - {t: '$$mdi:backspace$$', h: EDIT}
-  - {t: Ctl+Gui+/, s: 'Ctl+Gui+?'}
+  - EDIT
+  - {t: '$$mdi:backspace$$', h: SYM_NUM}
+  - '&aerospace_tap'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: MOUSE, h: toggle}
@@ -179,8 +179,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -427,8 +427,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+B
   - Meh+LGUI
