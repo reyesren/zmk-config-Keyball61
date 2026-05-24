@@ -57,7 +57,7 @@ layers:
   - func
   - EDIT
   - {t: '$$mdi:backspace$$', h: SYM_NUM}
-  - '&aerospace_tap'
+  - Alt+Ctl+LGUI
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: MOUSE, h: toggle}
@@ -496,3 +496,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [56, 57]
+  k: Ctl+Alt+Gui+$$mdi:apple-keyboard-shift$$
+  l: [QWRT]
